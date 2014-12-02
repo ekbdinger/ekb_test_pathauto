@@ -1,0 +1,12 @@
+name = test_pathauto
+description = Pathauto for video and security attribute content types
+core = 7.x
+package = Features
+version = 7.x-1.0-beta1
+project = test_pathauto
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = pathauto_node_security_attribute_pattern
+features[variable][] = pathauto_node_video_pattern
